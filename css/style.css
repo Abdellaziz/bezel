@@ -1,0 +1,593 @@
+/*------    nav bar sart    -------*/
+
+
+.navbar-collapse
+{
+    flex-grow: unset ;
+}
+
+
+.navbar
+{
+    position: relative;
+}
+.icon-border::before
+{
+content: "";
+width: .2px;
+opacity: .5;
+height: 100%;
+background: gray;
+border: none;
+position: absolute;
+top: 0%;
+bottom: 0%;
+
+}
+@media screen and (max-width:990px) {
+    .icon-border{
+        display: none;
+    }
+    
+}
+
+/*------    nav bar end    -------*/
+
+
+
+
+/*------     header start   -------*/
+header{
+    height: 100vh;
+  
+    position: relative;
+
+}
+
+.text
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+}
+.text h2
+{
+    font-size: 30px;
+    font-weight: bolder;
+    
+}
+.text-btn button{
+    padding: 10px;
+    width: 100px;
+    font-size: 20;
+    font-weight: 700;
+}
+.text-btn .but1
+{
+    background: transparent;
+    color: white;
+    border: solid .3px white;
+border-radius: 5px;
+transition: all .5s;
+}
+.text-btn .but1:hover{
+    background: white !important;
+    color: black;
+}
+.text-btn .but
+{
+    background:  #00c3da;
+    color: white;
+    border: solid .3px white;;
+    color: white;
+    border:none;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition:all 5s;
+}
+.text-btn .but:hover
+{
+    position: relative;
+    bottom: 2px;
+}
+.text h2
+{
+    opacity: 1;
+    animation-name: text;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    
+}
+
+@keyframes text {
+
+0%{opacity: 0;}
+50%{opacity: .5;}
+
+100%{opacity: 1;}
+
+}
+.carousel{
+    height: 100vh;
+}
+.carousel-inner
+{
+    height: 100%;
+}
+.carousel-inner img
+{
+    height: 100vh;
+   
+}
+.text h4
+{
+    opacity: 1;
+    animation-name: text-1;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+ 
+    
+}
+
+@keyframes text-1 {
+
+0%{opacity: 0;}
+25%{opacity: 0;}
+50%{opacity: .5;}
+100%{opacity: 1;}
+}
+.text button
+{
+    opacity: 1;
+    animation-name: button-1;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+ 
+    
+}
+
+@keyframes button-1 {
+
+0%{opacity: 0;}
+45%{opacity: 0;}
+50%{opacity: .5;}
+100%{opacity: 1;}
+}
+.carousel{
+    height: 100vh;
+}
+.carousel-inner
+{
+    height: 100%;
+}
+.carousel-inner img
+{
+    height: 100vh;
+    
+}
+.navbar
+{
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+}
+.bt-1
+{
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+.bt-1 .carousel-control-next,.bt-1 .carousel-control-prev{
+
+   position: unset;
+    opacity: 1;
+    width: unset;
+    border: 1px solid white;
+   
+
+}
+.carousel-control-prev-icon ,.carousel-control-next-icon 
+{
+background-image: unset;
+}
+.hov{
+    position: relative;
+background:transparent;
+z-index: 999999;
+}
+.hov-87
+{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    bottom:0%;
+    right: 100%;
+    background-color: white;
+    transition: all .5s;
+      
+ 
+}
+.hov:hover .hov-87
+{
+    right:0%;
+    background: white;
+    z-index: -1;
+  
+}
+.hov:hover .carousel-control-prev-icon i , .hov:hover .carousel-control-next-icon i
+{
+    color: black;
+
+    
+}
+@media screen and (max-width:990px){
+    .text-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*------     header end   -------*/
+/*------  about section start    --------*/
+
+
+.hoda-about span::after{
+    content: "  |";
+    color: #00c3da;
+    animation-name: morgan;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes morgan
+{
+    0%{content: "a  |"}
+    2%{content: "ap  |"}
+    4%{content: "app  |"}
+    6%{content: "apps  |"}
+    8%{content: "app  |"}
+    10%{content: "ap  |"}
+    12%{content: "a |"}
+    14%{content: "w  |"}
+    16%{content: "we  |"}
+    18%{content: "web  |"}
+    20%{content: "webs  |"}
+    22%{content: "websi  |"}
+    24%{content: "websit  |"}
+    26%{content: "website  |"}
+    28%{content: "websites  |"}
+    30%{content: "website  |"}
+    32%{content: "websit  |"}
+    34%{content: "websi  |"}
+    36%{content: "webs  |"}
+    38%{content: "web  |"}
+    40%{content: "we  |"}
+    44%{content: "w  |"}
+    48%{content: "s |"}
+    52%{content: "so  |"}
+    55%{content: "sof  |"}
+    58%{content: "soft  |"}
+    64%{content: "soft w  |"}
+    66%{content: "soft wa  |"}
+    69%{content: "soft war  |"}
+    75%{content: "soft ware  |"}
+    80%{content: "soft war  |"}
+    82%{content: "soft wa  |"}
+    86%{content: "soft w  |"}
+    90%{content: "soft  |"}
+    92%{content: "sof  |"}
+    94%{content: "so  |"}
+    96%{content: "so  |"}
+    98%{content: "s  |"}
+    100%{content: "  |"}
+
+
+
+
+
+}
+.hoda-about button
+{
+    padding: 5px;
+  background: white;
+    font-size: 15px;
+    border: solid .5px gray ;
+    width: 15%;
+    transition: all .5s;
+}
+.hoda-about button:hover
+{
+    color: white;
+    background: black;
+}
+
+
+
+
+/*------  about section end    --------*/
+
+
+
+
+/*------  team section start    --------*/
+
+.team-back h3
+{
+    font-size: 100px;
+    color: rgba(00,00, 00, .3);
+}
+
+
+
+.team-back1 h2
+{
+    font-size: 50px;
+}
+.team-img
+{
+    position: relative;
+    overflow: hidden;
+}
+.back-img{
+ position: absolute;
+ top: 10%;
+ right: 0%;
+ bottom: 0%;
+ width: 100%;
+ height: 100%;
+ background: rgba(10, 231, 183, 0.76);   
+ opacity: 0;
+ transition: all .5s;
+}
+.team-img:hover .back-img
+{
+    top: 0%;
+    opacity: 1;
+}
+
+/*------  team section end    --------*/
+
+
+/*  services section start  */
+
+.back-sec{
+    background: #787878;
+    color: white;
+    }
+    .serv-back{
+        position: relative;
+    }
+    .serv-back1
+    {
+        color:   rgba(00,00, 00, .3);
+        font-weight: bolder;
+       
+    }
+    .serv-back2{
+        position: absolute;
+     bottom: 0%;
+        left: 0%;
+        right: 0%;
+        
+    }
+/*  services section end  */
+
+/*  prices section start */
+
+.prices-back{
+    background:rgb(238, 234, 234);
+}
+
+.btn-pric
+{
+    padding: 5px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background: #00c3da;
+    color: white;
+    transition: all 5s;
+    
+}
+.prices{
+    box-sizing: border-box;
+}
+.prices-card{
+    padding: 5px;
+    position: relative;
+}
+.vip
+{
+    background: #00c3da;
+    color: white;
+    width: 80px;
+    height: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    font-size: 10px;
+    font-weight: bolder;
+}
+.vip-2
+{
+    
+    position: relative;
+    bottom: 5%;
+}
+.pri{
+    color:#00c3da;
+}
+.prices-card1{
+    border-bottom: solid .2px rgb(228, 227, 227);
+    height: 60px;
+
+}
+.btn-pric:hover
+{
+    position: relative;
+    bottom: 2px;
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(4, 163, 155));
+}
+.ticnic{
+    margin-bottom: 10px;
+}
+
+/*  prices section end */
+/*---   carousel start        --*/
+.carousel{
+    background:rgb(238, 234, 234);
+}
+.carousel-btn button
+{
+width: 50px !important;
+height: 50px !important;
+
+transform: translateY(300%);
+
+}
+.carousel-btn button i
+{
+    z-index: 1;
+    color: black;
+    transition: all .5s;
+}
+.carousel-btn button:hover .left 
+{
+    color: rgb(52, 52, 248);
+    position: relative;
+    right: 2px;
+}
+.carousel-btn button:hover .next
+    {
+        color: rgb(52, 52, 248);
+        position: relative;
+        left: 2px;
+    }
+
+#caeous-test
+{
+    
+    position: relative;
+}
+.carousel-item
+{
+    position: relative;
+}
+#caeous-test .carousel-indicators 
+{
+    position: unset;
+    position: absolute;
+    top: 50%;
+
+}
+#caeous-test .carousel-indicators button
+{
+    position: relative;
+    top: 60%;
+    background: turquoise;
+    width: 10px;
+    height: 10px;
+    border: solid 1px turquoise;
+    border-radius: 50%;
+}
+#caeous-test .carousel-inner
+{
+    position: relative;
+}
+
+
+.carousel-text
+{
+    background: white;
+   max-width: 70%;
+    max-height: 30%;
+    margin: auto;
+    position: relative;
+    padding: 30px;
+}
+
+#caeous-test .carousel-inner img
+{
+    
+ width:70px;
+ height:70px;
+ border-radius: 50%;
+ position: absolute;
+ top: 0%;
+ transform: translateY(-50%);
+}
+
+
+
+@media screen and (max-width:900px) 
+{
+  
+    .carousel-text{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .carousel-item
+{
+    position: relative;
+}
+#caeous-test .carousel-indicators 
+{
+    position: unset;
+    position: absolute;
+    top: 50%;
+
+}
+.par
+{
+    font-size: small;
+}
+#caeous-test .carousel-indicators button
+{
+    position: relative;
+    top: 10%;
+    background: turquoise;
+}
+}
+/*---   carousel end         --*/
+/*        -------------      footer start     -----------     */
+.back{
+    position: relative;
+}
+.back-1
+{
+    color:   rgba(00,00, 00, .3);
+    font-weight: bolder;
+   
+}
+.back-2{
+    position: absolute;
+ bottom: 0%;
+    left: 0%;
+    right: 0%;
+    
+}
+form .btn-form
+{
+    background: #00c3da;
+   border-radius: 10px;
+    border: none;
+    padding: 10px;
+    color: white;
+    transition: all 1s;
+}
+form .btn-form:hover
+{
+    position: relative;
+    bottom: 4px;
+    background:#0ad6ec ;
+}
+/*        -------------      footer end     -----------     */
